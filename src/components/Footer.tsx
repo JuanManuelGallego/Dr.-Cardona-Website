@@ -87,7 +87,7 @@ export default function Footer() {
         className="absolute top-0 left-0 right-0 h-px"
         style={{
           background:
-            'linear-gradient(90deg, transparent 0%, hsl(var(--primary) / 0.7) 50%, transparent 100%)',
+            'linear-gradient(90deg, transparent 0%, color-mix(in srgb, var(--color-primary) 70%, transparent) 50%, transparent 100%)',
         }}
       />
 
@@ -104,7 +104,7 @@ export default function Footer() {
               className="h-auto w-64 object-contain object-left md:w-72"
             />
             <div className="mt-3 text-[11px] uppercase tracking-[0.25em] text-white/55">
-              Psicóloga · Psicoterapeuta
+              Familias · Parejas · Adultos
             </div>
             <p className="mt-5 text-sm leading-relaxed text-white/65 max-w-xs">
               Itinerarios de psicoterapia cognitivo-conductual, en consulta en

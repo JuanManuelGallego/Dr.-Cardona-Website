@@ -57,14 +57,14 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ['var(--font-sans)'],
-        heading: ['var(--font-heading)'],
-        body: ['var(--font-body)'],
+        sans: [ 'var(--font-sans)' ],
+        heading: [ 'var(--font-heading)' ],
+        body: [ 'var(--font-body)' ],
       },
       boxShadow: {
-        soft: '0 1px 2px hsl(25 25% 20% / 0.04), 0 8px 24px -12px hsl(25 25% 20% / 0.10)',
-        'soft-lg': '0 2px 4px hsl(25 25% 20% / 0.05), 0 20px 40px -20px hsl(25 25% 20% / 0.18)',
-        'soft-xl': '0 4px 8px hsl(25 25% 20% / 0.06), 0 30px 60px -25px hsl(25 25% 20% / 0.22)',
+        soft: '0 1px 2px rgb(84 30 61 / 0.04), 0 8px 24px -12px rgb(84 30 61 / 0.10)',
+        'soft-lg': '0 2px 4px rgb(84 30 61 / 0.05), 0 20px 40px -20px rgb(84 30 61 / 0.18)',
+        'soft-xl': '0 4px 8px rgb(84 30 61 / 0.06), 0 30px 60px -25px rgb(84 30 61 / 0.22)',
       },
       keyframes: {
         'fade-up': {
@@ -77,7 +77,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [ require("tailwindcss-animate") ],
 }
 
 export default config 
