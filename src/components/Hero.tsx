@@ -3,16 +3,15 @@ import { homeContent } from '@/content/text'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden hidden md:block">
+    <section className="relative overflow-hidden">
       {/* Brand-tinted gradient backdrop */}
       <div
         aria-hidden
         className="absolute inset-0 -z-10"
       />
 
-      <div className="container flex flex-col md:flex-row justify-center items-center gap-12 py-16">
-        {/* Colonna sinistra: Immagine */}
-        <div className="flex-shrink-0 flex relative">
+      <div className="container flex flex-col justify-center items-center gap-6 py-10 md:flex-row md:gap-12 md:py-16">
+        <div className="hidden md:flex md:flex-shrink-0 md:relative">
           <Image
             src="/images/logo-website.png"
             alt={homeContent.hero.imageAlt}

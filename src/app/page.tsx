@@ -24,8 +24,9 @@ export default function Home() {
         data={[ getWebsiteSchema(), getPersonSchema(), getLocalBusinessSchema() ]}
       />
       <main id="main-content">
-        <Hero />
         <Navbar />
+        <Hero />
+        <div className="border-t border-border/60 bg-gradient-to-b from-background via-background to-muted/25" />
         <About />
         <Patients />
         <Where />

@@ -42,8 +42,8 @@ export default function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={`relative text-[13px] font-medium tracking-[0.12em] uppercase transition-colors px-4 py-2 rounded-full ${pathname === item.href
-                    ? 'text-primary bg-primary/10'
-                    : 'text-foreground/80 hover:text-primary hover:bg-primary/5'
+                  ? 'text-primary bg-primary/10'
+                  : 'text-foreground/80 hover:text-primary hover:bg-primary/5'
                   }`}
               >
                 {item.label}
@@ -70,8 +70,8 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={`transition-all font-medium px-6 py-3 rounded-lg w-full max-w-xs text-center ${pathname === item.href
-                      ? 'text-primary font-semibold bg-primary/10'
-                      : 'text-foreground hover:text-primary hover:bg-primary/5'
+                    ? 'text-primary font-semibold bg-primary/10'
+                    : 'text-foreground hover:text-primary hover:bg-primary/5'
                     }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
