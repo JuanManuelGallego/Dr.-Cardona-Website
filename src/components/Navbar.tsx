@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
-import { homeContent } from '@/content/text'
+import { contattamiContent, homeContent } from '@/content/text'
 
 export default function Navbar() {
   const [ isMobileMenuOpen, setIsMobileMenuOpen ] = useState(false)
@@ -51,6 +51,15 @@ export default function Navbar() {
             ))}
           </div>
 
+          <a
+            href={contattamiContent.contactMethods[ 1 ].link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-block cta-button font-sans text-[13px] tracking-[0.12em] uppercase"
+          >
+            Reserva ya
+          </a>
+
           {/* Mobile menu button */}
           <button
             className="md:hidden p-2"
@@ -78,6 +87,15 @@ export default function Navbar() {
                   {item.label}
                 </Link>
               ))}
+              <a
+                href={contattamiContent.contactMethods[ 1 ].link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button w-full max-w-xs text-center font-sans text-[13px] tracking-[0.12em] uppercase"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Reserva ya
+              </a>
             </div>
           </div>
         )}
